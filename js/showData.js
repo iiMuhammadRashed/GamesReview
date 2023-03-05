@@ -7,6 +7,8 @@ export class ShowData {
     this.nav = document.querySelectorAll(".nav-item span");
     for (var i = 0; i < this.nav.length; i++) {
       this.nav[i].addEventListener("click", (e) => {
+        document.querySelector(".nav-item .active").classList.remove("active");
+        e.target.classList.add("active");
         this.category = e.target.getAttribute("data-category");
         this.apiFetch(this.category);
       });
