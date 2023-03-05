@@ -7,6 +7,7 @@ export class ShowData {
     this.nav = document.querySelectorAll(".nav-item span");
     for (var i = 0; i < this.nav.length; i++) {
       this.nav[i].addEventListener("click", (e) => {
+        $("html, body").animate({ scrollTop: 0 }, 0);
         document.querySelector(".nav-item .active").classList.remove("active");
         e.target.classList.add("active");
         this.category = e.target.getAttribute("data-category");
@@ -17,7 +18,7 @@ export class ShowData {
 
   async apiFetch(category) {
     $(".gamesDetails").fadeOut(300);
-    $(".loadingS").fadeIn(100);
+    $(".loadingS").fadeIn(50);
     $("body").css("overflow", "hidden");
     let api = await fetch(
       `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`,
