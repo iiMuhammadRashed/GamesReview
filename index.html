@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 11</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="index">
+    <div class="loadingS"><span class="loader"></span></div>
+
+    <div class="background"><div class="background-inner"></div></div>
+    <!-- navbar start -->
+    <nav
+      class="navbar navbar-expand-lg w-75 mx-auto rounded-4 position-sticky shadow"
+    >
+      <div class="container">
+        <span class="navBrand">
+          <img src="images/icon.png" alt="Logo" class="d-inline-block" />
+          Games Review
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span
+                class="nav-link active gameCats"
+                aria-current="page"
+                data-category="MMORPG"
+                >MMORPG</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link gameCats" data-category="SHOOTER"
+                >SHOOTER</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link gameCats" data-category="SAILING"
+                >SAILING</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link gameCats" data-category="PERMADEATH"
+                >PERMADEATH</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link gameCats" data-category="SUPERHERO"
+                >SUPERHERO</span
+              >
+            </li>
+            <li class="nav-item">
+              <span class="nav-link gameCats" data-category="PIXEL">PIXEL</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Game container Start -->
+    <section class="gamesContainer" id="particles-js">
+      <div class="container gamesContainerBack">
+        <div class="row g-5 gamesArea my-5"></div>
+      </div>
+    </section>
+    <!-- Game container End -->
+    <!-- Game Details Start -->
+    <section class="gamesDetails">
+      <div class="container">
+        <div class="game">
+          <div
+            class="row justify-content-center align-items-center text-white my-3"
+          >
+            <div class="col-6"><h1>Game Details</h1></div>
+            <div class="col-6 d-flex justify-content-end">
+              <i class="x-mark fa-solid fa-xmark-large" id="closeBtn"></i>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-md-4">
+              <div class="gameImgContainer shadow imgOutline rounded-4">
+                <img
+                  id="gameImg"
+                  src=""
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="gameNameContainer text-white">
+                <h2 class="gamesName" id="gameName"></h2>
+                <h3 class="gameData">
+                  Category:
+                  <span class="btn btn-primary cardBtn" id="gameCategory"
+                    ></span
+                  >
+                </h3>
+                <h3 class="gameData">
+                  Platform:
+                  <span class="btn btn-primary cardBtn" id="gamePlatform"
+                    ></span
+                  >
+                </h3>
+                <h3 class="gameData">
+                  Status:
+                  <span class="btn btn-primary cardBtn" id="gameStatus"
+                    ></span
+                  >
+                </h3>
+                Discreption
+                <p class="gameData" id="gameDiscretion">
+                </p>
+                <button class="btn btn-outline-warning">
+                  <a
+                    target="_blank"
+                    href=""
+                    class="text-white text-decoration-none"
+                    id="gameLink"
+                    >Start Game</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
